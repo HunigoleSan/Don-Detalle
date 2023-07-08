@@ -1,0 +1,476 @@
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    overflow-x: hidden;
+    height: 500vh;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primario);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vineta {
+    width: 350px;
+    height: 110px;
+    background-image: url('../img/vineta.png');
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* clip-path: polygon(16% 0, 100% 0%, 100% 100%, 16% 100%, 0% 50%); */
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    gap: 25px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 35%));
+    padding-left: 3rem;
+    /* display: none; */
+}
+
+
+.icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+.presentacion {
+    overflow: hidden;
+    max-width: 1100px;
+    max-height: 700px;
+    background: linear-gradient(90deg, var(--marron-claro) 50%,
+            var(--verde-oscuro)50%);
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.30);
+}
+
+.presentacion::after {
+    content: "Don detalle";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -khtml-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -chrome-transform: translate(-50%);
+    line-height: 6rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: var(--secundario);
+    transition: left .5s ease;
+}
+
+.presentacion::before {
+    content: "";
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    background-image: url(../img/logo/logov2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -chrome-transform: translate(-50%, -50%);
+    z-index: 5;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
+    transition: left .5s ease, top .5s ease;
+    animation: ocultarLogo 5s forwards;
+    -moz-animation: ocultarLogo 5s forwards;
+    -webkit-animation: ocultarLogo 5s forwards;
+    -o-animation: ocultarLogo 5s forwards;
+    -khtml-animation: ocultarLogo 5s forwards;
+    -ms-animation: ocultarLogo 5s forwards;
+    -chrome-animation: ocultarLogo 5s forwards;
+}
+
+@keyframes ocultarLogo {
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.presentacion__links {
+    padding: 0rem 6.8rem;
+    line-height: 6rem;
+    font-weight: lighter;
+}
+
+.presentacion__links>ul {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--secundario);
+}
+
+.presentacion__links>ul>li {
+    list-style-type: none;
+}
+
+.presentacion__links>ul>li>a {
+    text-decoration: none;
+    color: var(--secundario);
+
+}
+
+.presentacion__bienvenida {
+    display: flex;
+
+}
+
+.presentacion__frase {
+
+    width: 50%;
+    padding: 0rem 6.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: star;
+    gap: 2rem;
+    transition: margin .5s ease;
+
+}
+
+.encabezado {
+    font-size: 4.9rem;
+    color: var(--secundario);
+    line-height: 115%;
+}
+
+.texto {
+    font-size: 1.8rem;
+    color: var(--secundario);
+    font-weight: lighter;
+}
+
+.catalogo {
+    margin-top: 8.4rem;
+    margin-left: 7.5rem;
+    width: 160px;
+    height: 60px;
+    display: block;
+    background-color: var(--violeta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--texto-negro);
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.catalogo::before {
+    content: "";
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid var(--secundario);
+    border-radius: 5px;
+    top: .5rem;
+    left: .5rem;
+    z-index: -1;
+}
+
+.presentacion__imagen {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+    padding: 3.5rem 0rem 0rem 6.8rem;
+    animation: ocultarImagenPulsera 2.5s forwards;
+    -moz-animation: ocultarImagenPulsera 2.5s forwards;
+    -webkit-animation: ocultarImagenPulsera 2.5s forwards;
+    -o-animation: ocultarImagenPulsera 2.5s forwards;
+    -khtml-animation: ocultarImagenPulsera 2.5s forwards;
+    -ms-animation: ocultarImagenPulsera 2.5s forwards;
+    -chrome-animation: ocultarImagenPulsera 2.5s forwards;
+
+}
+
+@keyframes ocultarImagenPulsera {
+    0%,50% {
+        opacity: 0;
+    }
+
+    50%,100% {
+        opacity: 1;
+    }
+}
+
+.imagen {
+    width: 509px;
+    height: 604px;
+    object-fit: cover;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1120px) {
+
+    .presentacion__frase {
+        width: 80%;
+        height: 100%;
+        margin-top: 14.5rem;
+    }
+
+    .presentacion__imagen {
+        display: none;
+    }
+
+    .presentacion {
+        min-height: 700px;
+    }
+
+    .presentacion::before {
+        content: "";
+        position: absolute;
+        width: 212px;
+        height: 212px;
+        background-image: url(../img/logo/logov2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 75%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
+        transition: left .5s ease, top .5s ease;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -khtml-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -chrome-transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .presentacion {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 744px) {
+    .presentacion::after {
+        content: "Don detalle";
+        position: absolute;
+        top: 0;
+        left: 68%;
+        line-height: 6rem;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        color: var(--secundario);
+        transition: left .5s ease;
+        transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        -khtml-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -chrome-transform: translate(-50%);
+
+    }
+
+    .presentacion__frase {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .encabezado {
+        font-size: 3rem;
+    }
+
+    .presentacion__frase {
+
+        /* background: red; */
+        margin-top: 5rem;
+        transition: margin .5s ease;
+    }
+
+    .catalogo {
+        margin-top: 4rem;
+        margin-left: 3rem;
+    }
+
+    .texto {
+        font-size: 1.6rem;
+    }
+
+    .presentacion::before {
+        content: "";
+        position: absolute;
+        width: 212px;
+        height: 212px;
+        background-image: url(../img/logo/logov2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 75%;
+        left: 50%;
+        z-index: 5;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
+        transition: left .5s ease, top .5s ease;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -khtml-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -chrome-transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .presentacion::after {
+        content: "";
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        display: inherit;
+        padding-top: 14rem;
+    }
+
+    .presentacion {
+        margin: 0 auto;
+    }
+
+    .presentacion::before {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        background-image: url(../img/logo/logov2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 80%;
+        left: 50%;
+        z-index: 5;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
+        transition: left .5s ease, top .5s ease;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -khtml-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -chrome-transform: translate(-50%, -50%);
+    }
+
+    .presentacion__links>ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion__frase {
+
+        padding: 0rem 4rem 5rem 4rem;
+    }
+
+    .presentacion__links {
+        padding: 0rem 4.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .presentacion__frase {
+        margin-top: 4rem;
+        padding: 0rem 2rem 5rem 2rem;
+    }
+
+    .catalogo {
+        width: 100px;
+        height: 40px;
+        margin-top: 3rem;
+        margin-left: 0rem;
+        font-size: 1.6rem;
+    }
+
+    .catalogo::before {
+        content: "";
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        border: 1px solid var(--secundario);
+        border-radius: 5px;
+        top: .5rem;
+        left: .5rem;
+        z-index: -1;
+    }
+
+    .presentacion {
+        max-height: 600px;
+        min-height: inherit;
+        margin: 0 auto;
+    }
+
+    .presentacion__links {
+        padding: 0rem 2rem;
+    }
+
+    .presentacion {
+        overflow: inherit;
+    }
+
+    .presentacion::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/logo/logov2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 80%;
+        left: 75%;
+        z-index: 5;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
+        transition: left .5s ease, top .5s ease;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -khtml-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -chrome-transform: translate(-50%, -50%);
+    }
+}
