@@ -30,7 +30,7 @@
             <div class="presentacion">
                 <div class="presentacion__links">
                     <ul>
-                        <li><a href="#">Catalogo</a></li>
+                        <li><a href="#catalogo">Catalogo</a></li>
                         <li><a href="#">Quien soy</a></li>
                     </ul>
                 </div>
@@ -38,14 +38,44 @@
                     <div class="presentacion__frase">
                         <p class="encabezado">Nuestros mejores productos</p>
                         <p class="texto">La alegria es saber disfrutar de las cosas simples y sencillas que nos ofrece la vida</p>
-                        <a class="catalogo" href="">Catalogo</a>
+                        <a class="catalogo" href="#catalogo">Catalogo</a>
                     </div>
                     <div class="presentacion__imagen"><img class="imagen" src="img/presentacionPulsera.png" alt="Pulsera"></div>
                 </div>
                 
             </div>
         </header>
+        <section id="catalogo" class="container__catalogo">
+            <div class="catalogo__cinta">
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+                <p class="frase__cinta">no importa donde estes, no importa lo que hagas, siempre tendras una parte de mi y yo una parte de ti </p>
+                <div class="circulo"></div>
+                <div class="circulo"></div>
+            </div>
+            <nav class="nav">
+                <ul id="navegacion">
+                    <li class="categoria bisuteria"><a href="#catalogo">Bisutería</a></li>
+                    <li class="categoria origami"><a href="#catalogo">Origami-3D</a></li>
+                    <li class="categoria arreglo"><a href="#catalogo">Arreglos</a></li>
+                    <li class="categoria todo"><a href="#catalogo">Todo</a></li>
+                </ul>
+            </nav>
+            <div class="productos">
+                <div id="bisuteriaHtml" class="container__bisuteria">
+                    
+                </div>
+                <div id="origamiHtml" class="container__origami">
+                    
+                </div>
+                <div id="arregloHtml" class="container__arreglos">
+                    
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/productos.js" type="module"></script>
+    <script src="js/mostrarProducto.js" type="module"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 

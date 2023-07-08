@@ -3,10 +3,11 @@ body,
 main {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 main {
-    overflow-x: hidden;
+    
     height: 500vh;
 }
 
@@ -19,7 +20,12 @@ header {
     justify-content: center;
     align-items: center;
 }
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primario);
 
+}
 .vineta {
     width: 350px;
     height: 110px;
@@ -139,7 +145,7 @@ header {
 .presentacion__links>ul>li>a {
     text-decoration: none;
     color: var(--secundario);
-
+    
 }
 
 .presentacion__bienvenida {
@@ -236,10 +242,150 @@ header {
     object-fit: cover;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
 }
+/* Estilos para el contenedor de productos */
+.container__catalogo{
+    padding-top: 14rem;
+}
+.catalogo__cinta{
+    background-color: var(--secundario);
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+.circulo{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--primario);
+    
+}
+.frase__cinta{
+    text-align: center;
+    margin: 0rem auto;
+    font-size: 1.6rem;
+}
+.circulo:first-child{
+    margin-left: 5.6rem;
+}
+.circulo:last-child{
+    margin-right: 5.6rem;
+}
+.nav{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: var(--verde-oscuro);
+    position: sticky;
+    top: 2rem;
+    
+}
+.nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+@supports not (position: sticky) {
+    /* Estilos alternativos para navegadores que no admiten position: sticky */
+    .nav {
+      position: relative;
+    }
+    .nav::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 0;
+    }
+  }
+.nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.nav > ul > li{
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: var(--texto-blanco);
+    cursor: pointer;
+    transition: text-shadow .5s ease;
 
+    -moz-transition: text-shadow .5s ease;
+    -webkit-transition: text-shadow .5s ease;
+    -o-transition: text-shadow .5s ease;
+    -khtml-transition: text-shadow .5s ease;
+    -ms-transition: text-shadow .5s ease;
+    -chrome-transition: text-shadow .5s ease;
+    
+}
+.nav > ul > li:hover{
+ 
+    text-shadow: 5px 5px 3.5px var(--texto-negro);
+}
+.productos{
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__bisuteria,
+.container__origami,
+.container__arreglos{
+    width: 70%;
+    display: grid;
+    grid-auto-rows: 48.5rem;
+    grid-template-columns: repeat(auto-fit, 29rem);
+    gap: 3.5rem;
+    padding-bottom: 3.5rem;
+    justify-content: center;
+}
+.carta{
+    background-color: var(--marron-claro);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 30%);
+}
+.carta > img{
+    height: 26.9rem;
+    
+}
+.nombre{
+    margin-top: 2rem;
+    padding: 0rem 2.5rem;
+    font-size: 1.8rem;
+    color: var(--texto-blanco);
+    font-weight: bold;
+}
+.descripcion{
+    padding: 0rem 2.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--texto-blanco);
+    font-weight: 100;
+}
+.precio{
+    padding: 0rem 2.5rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--texto-blanco);
+    font-weight: bold;
+    text-align: end;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 1120px) {
+    .nav {
+        margin-top: 0rem;
 
+    }
+    .catalogo__cinta{
+        display: none;
+    }
     .presentacion__frase {
         width: 80%;
         height: 100%;
