@@ -820,6 +820,10 @@ section {
     .meta{
         margin-bottom: 5rem;
     }
+    .vision, .meta {
+        padding: 2.7rem 3rem;
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 414px) {
