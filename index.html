@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <main>
+    <main id="menuPrincipal">
         <header>
             
-            <div class="vineta">
+            <div id="vineta" class="vineta">
                 <a title="Contactame" class="icon" href="https://wa.me/51918986528"><img src="img/icon/whatsapp.png" alt=""></a>
                 <a class="icon" href="https://www.tiktok.com/@don_detalle05?_t=8doBloCXSr7&_r=1"><img src="img/icon/tik-tok.png" alt=""></a>
                 <a class="icon" href="https://www.facebook.com/profile.php?id=100083576220486&mibextid=ZbWKwL"><img src="img/icon/facebook.png" alt=""></a>
@@ -53,8 +53,13 @@
                 <div class="circulo"></div>
                 <div class="circulo"></div>
             </div>
-            <nav class="nav">
-                <ul id="navegacion">
+            <nav id="contenedorNav" class="nav">
+                <div class="boton_nav">
+                    <p>Don Detalle</p>
+                    <div id="navMobileAbrir" class="mobile nav__mobile_abrir">|||</div>
+                    <div id="navMobileCerrar" class="mobile nav__mobile_cerrar">X</div>
+                </div>
+                <ul id="navegacion" class="categoria__ul">
                     <li class="categoria bisuteria"><a href="#catalogo">Bisutería</a></li>
                     <li class="categoria origami"><a href="#catalogo">Origami-3D</a></li>
                     <li class="categoria arreglo"><a href="#catalogo">Arreglos</a></li>
@@ -74,6 +79,8 @@
             </div>
         </section>
     </main>
+    <script src="js/navMobile.js"></script>
+    <script src="js/scroolNav.js"></script>
     <script src="js/productos.js" type="module"></script>
     <script src="js/mostrarProducto.js" type="module"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

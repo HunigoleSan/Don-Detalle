@@ -4,15 +4,14 @@ const bisuteriaHtml = document.getElementById("bisuteriaHtml")
 const origamiHtml = document.getElementById("origamiHtml")
 const arregloHtml = document.getElementById("arregloHtml")
 let categoria = "";
-console.log(arregloHtml)
 
 mostrarProductoCategoria()
 function mostrarProductoCategoria() {
     categoriaHtml.forEach(function (currentValue, index, array) {
-        console.log(currentValue)
+        /* console.log(currentValue) */
         currentValue.addEventListener('click', function () {
             categoria = currentValue.classList[1]
-            console.log(categoria)
+            /* console.log(categoria) */
             if (categoria === 'bisuteria') {
                 console.log("bisuteria")
                 bisuteriaHtml.style.display = 'grid';
@@ -40,7 +39,6 @@ function mostrarProductoCategoria() {
     });
 }
 
-
 function imprimirProductos() {
     let bisuteria = 'bisuteria';
     let origami = 'origami';
@@ -48,9 +46,7 @@ function imprimirProductos() {
     let listaCategoria = []
     for (let i = 0; i < objProductos.length; i++) {
         listaCategoria = objProductos[i][bisuteria]
-        console.log(listaCategoria)
         if(objProductos[i].hasOwnProperty(bisuteria)) {
-            console.log("cumplio la condición")
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
@@ -59,17 +55,14 @@ function imprimirProductos() {
                             <p class="descripcion">${productos.descripcion}</p>
                             <p class="precio">${productos.precio}</p>
                         </div>`
-                /* bisuteriaHtml.insertAdjacentElement("afterbegin",cartaJS) */
                 bisuteriaHtml.innerHTML += cartaJS;
-                console.log(cartaJS)
+                /* console.log(cartaJS) */
             }
         }
     }
     for (let i = 0; i < objProductos.length; i++) {
         listaCategoria = objProductos[i][origami]
-        console.log(listaCategoria)
         if(objProductos[i].hasOwnProperty(origami)) {
-            console.log("cumplio la condición")
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
@@ -78,17 +71,14 @@ function imprimirProductos() {
                             <p class="descripcion">${productos.descripcion}</p>
                             <p class="precio">${productos.precio}</p>
                         </div>`
-                /* bisuteriaHtml.insertAdjacentElement("afterbegin",cartaJS) */
                 origamiHtml.innerHTML += cartaJS;
-                console.log(cartaJS)
+                /* console.log(cartaJS) */
             }
         }
     }
     for (let i = 0; i < objProductos.length; i++) {
         listaCategoria = objProductos[i][arreglo]
-        console.log(listaCategoria)
         if(objProductos[i].hasOwnProperty(arreglo)) {
-            console.log("cumplio la condición")
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
@@ -97,9 +87,8 @@ function imprimirProductos() {
                             <p class="descripcion">${productos.descripcion}</p>
                             <p class="precio">${productos.precio}</p>
                         </div>`
-                /* bisuteriaHtml.insertAdjacentElement("afterbegin",cartaJS) */
                 arregloHtml.innerHTML += cartaJS;
-                console.log(cartaJS)
+                
             }
         }
     }
