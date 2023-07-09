@@ -417,11 +417,165 @@ section {
     text-align: end;
 }
 
+/* ESTILOS PARA LA INFORMACION DE LA PERSONA*/
+.persona {
+    font-family: 'Manrope', sans-serif;
+    padding-bottom: 5.7rem;
+}
+
+.perfil {
+    max-width: 100rem;
+    max-height: 60rem;
+
+    margin: 3rem auto;
+    display: flex;
+
+    position: relative;
+}
+
+.frase-size {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.perfil::before {
+    content: attr(data-perfil)"";
+    position: absolute;
+    background-color: var(--morado-oscuro);
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--texto-blanco);
+    text-align: center;
+    padding: 1.5rem;
+    bottom: 0;
+}
+
+.avatar,
+.informacion {
+    width: 50%;
+}
+
+.avatar {
+    background-color: var(--crema-claro);
+}
+
+.informacion {
+    display: flex;
+    background-color: var(--crema);
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.modelo_desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-top: 8rem;
+}
+.modelo_mobile{
+    display: none;
+}
+
+.nombre_person,
+.sobre_mi,
+.experiencia,
+.quien_soy {
+    color: var(--texto-negro);
+    width: 100%;
+    transition: padding .5s ease-in-out;
+}
+
+.sobre_mi {
+    font-size: 1.8rem;
+    padding: 0rem 6rem;
+    
+
+}
+
+.experiencia,
+.quien_soy {
+    padding: 1rem 6rem;
+    transition: padding .5s ease-in-out;
+}
+
+.experiencia {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.quien_soy {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nombre_person {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+}
+
+.apellido {
+    width: 100%;
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.objetivo {
+    max-width: 100rem;
+    min-height: 17rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.vision,
+.meta {
+    padding: 2.7rem 6rem;
+    font-size: 1.6rem;
+}
+
+.vision>p:first-child,
+.meta>p:first-child {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.vision{
+    background-color: var(--crema);
+}
+.meta {
+    background-color: var(--crema-claro);
+}
+.vision,.meta {
+    transition: box-shadow .5s ease-in-out;
+    -moz-transition: box-shadow .5s ease-in-out;
+    -webkit-transition: box-shadow .5s ease-in-out;
+    -o-transition: box-shadow .5s ease-in-out;
+    -khtml-transition: box-shadow .5s ease-in-out;
+    -ms-transition: box-shadow .5s ease-in-out;
+    -chrome-transition: box-shadow .5s ease-in-out;
+}
+
+
+.vision:hover,
+.meta:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 15%);
+    position: relative;
+    z-index: 2;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1120px) {
-
-    .container__catalogo {}
-
+    .modelo_desktop{
+        display: none;
+    }
+    .modelo_mobile{
+        display: block;
+    }
     .nav {
         margin-top: 0rem;
         height: 8em;
@@ -433,6 +587,10 @@ section {
 
     .catalogo__cinta {
         display: none;
+    }
+
+    .catalogo-d-block {
+        display: flex;
     }
 
     .presentacion__frase {
@@ -470,6 +628,55 @@ section {
         -ms-transform: translate(-50%, -50%);
         -chrome-transform: translate(-50%, -50%);
     }
+
+    .perfil{
+        flex-direction: column;
+        max-width: 50rem;
+        background-color: var(--crema);
+        padding: 3.5rem 0rem;
+        max-height: inherit;
+    }
+    .objetivo{
+        max-width: 50rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .vision,
+    .meta{
+        width: 100%;
+    }
+    .nombre_person{
+        font-size: 5rem;
+        margin-top: 2rem;
+
+    }
+    .apellido{
+        font-size: 6rem;
+    }
+    .avatar,.informacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sobre_mi{
+        margin-top: 2rem;
+    }
+    .avatar{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .quien_soy{
+        margin-bottom: 6rem;
+    }
+    /* .avatar > img{
+        width: 150px;
+        height: 526px;
+        margin: 0 auto;
+        object-fit: cover;
+        padding-top: 4rem;
+        background-position: center center;
+    } */
 
 }
 
@@ -557,7 +764,24 @@ section {
         content: "";
         display: none;
     }
-
+    .perfil{
+        max-width: 95%;
+        
+        
+    }
+    .objetivo{
+        max-width: 95%;
+    }
+    .sobre_mi,
+    .experiencia,
+    .quien_soy{
+        padding: 0rem 3.5rem;
+    }
+    .experiencia,
+    .quien_soy{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
     .boton_nav {
         width: 100%;
         display: flex;
@@ -591,6 +815,9 @@ section {
 
     .categoria__ul {
         display: none;
+    }
+    .meta{
+        margin-bottom: 5rem;
     }
 }
 
