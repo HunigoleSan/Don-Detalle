@@ -4,7 +4,7 @@ let catalogoHtml = document.getElementById("catalogo")
 function moverNavScroll(){
     let scrollTop = document.documentElement.scrollTop
 
-    if(scrollTop  > 1100){
+    if(scrollTop  > 900){
         console.log("es menor")
         vinetaHtml.classList.add("nav__bottom")
         
