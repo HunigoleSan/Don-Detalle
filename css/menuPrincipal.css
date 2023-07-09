@@ -537,6 +537,7 @@ section {
     padding: 2.7rem 6rem;
     font-size: 1.6rem;
     text-align: justify;
+    width: 50%;
 }
 
 .vision>p:first-child,
