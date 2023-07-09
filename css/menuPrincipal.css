@@ -536,6 +536,7 @@ section {
 .meta {
     padding: 2.7rem 6rem;
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .vision>p:first-child,
