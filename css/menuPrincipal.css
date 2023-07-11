@@ -952,6 +952,17 @@ section {
         margin-left: 0rem;
         font-size: 1.6rem;
     }
+    .catalogo__border{
+        position: absolute;
+        top: 3.5rem;
+        left: .5rem;
+        border: 1px solid var(--secundario);
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+        z-index: 0;
+        
+    }
 
     .presentacion {
         max-height: 600px;
