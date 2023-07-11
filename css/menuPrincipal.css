@@ -953,18 +953,6 @@ section {
         font-size: 1.6rem;
     }
 
-    .catalogo::before {
-        content: "";
-        width: 100px;
-        height: 40px;
-        position: absolute;
-        border: 1px solid var(--secundario);
-        border-radius: 5px;
-        top: .5rem;
-        left: .5rem;
-        z-index: -1;
-    }
-
     .presentacion {
         max-height: 600px;
         min-height: inherit;
