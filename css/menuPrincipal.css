@@ -792,6 +792,11 @@ section {
         margin-left: 3rem;
         
     }
+    .catalogo:hover {
+        margin-top: 4.5rem;
+        margin-left: 4rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 20%);
+    }
     .catalogo__border {
         position: absolute;
         top: 4.5rem;
@@ -951,6 +956,11 @@ section {
         margin-top: 3rem;
         margin-left: 0rem;
         font-size: 1.6rem;
+    }
+    .catalogo:hover {
+        margin-top: 3.5rem;
+        margin-left: .5rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 20%);
     }
     .catalogo__border{
         position: absolute;
