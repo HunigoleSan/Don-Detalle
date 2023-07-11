@@ -50,10 +50,12 @@ function imprimirProductos() {
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
-                            <img src="${productos.imagen}" alt="">
+                            <img src="${productos.imagen}" alt="${productos.alt}">
                             <p class="nombre">${productos.nombre}</p>
-                            <p class="descripcion">${productos.descripcion}</p>
-                            <p class="precio">${productos.precio}</p>
+                            <div class="contenedor__descripcion">
+                                <p class="descripcion">${productos.descripcion}</p> 
+                                <p class="precio">${productos.precio}</p>
+                            </div>
                         </div>`
                 bisuteriaHtml.innerHTML += cartaJS;
                 /* console.log(cartaJS) */
@@ -68,8 +70,11 @@ function imprimirProductos() {
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
                             <img src="${productos.imagen}" alt="">
                             <p class="nombre">${productos.nombre}</p>
-                            <p class="descripcion">${productos.descripcion}</p>
-                            <p class="precio">${productos.precio}</p>
+                            <div class="contenedor__descripcion">
+                                <p class="descripcion">${productos.descripcion}</p> 
+                                <p class="precio">${productos.precio}</p>
+                            </div>
+                            
                         </div>`
                 origamiHtml.innerHTML += cartaJS;
                 /* console.log(cartaJS) */
@@ -84,8 +89,10 @@ function imprimirProductos() {
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
                             <img src="${productos.imagen}" alt="">
                             <p class="nombre">${productos.nombre}</p>
-                            <p class="descripcion">${productos.descripcion}</p>
-                            <p class="precio">${productos.precio}</p>
+                            <div class="contenedor__descripcion">
+                                <p class="descripcion">${productos.descripcion}</p> 
+                                <p class="precio">${productos.precio}</p>
+                            </div>
                         </div>`
                 arregloHtml.innerHTML += cartaJS;
                 

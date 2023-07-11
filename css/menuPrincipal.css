@@ -66,7 +66,30 @@ section {
     display: block;
     width: 42px;
     height: 42px;
+    border-radius: 10px;
+    transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -webkit-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -khtml-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    -chrome-transition: box-shadow .5s ease;
+
 }
+
+.icon:nth-child(1):hover{
+    box-shadow: 0px 0px 20px rgba(71, 247, 28,40%);
+}
+.icon:nth-child(2):hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 30%);
+}
+.icon:nth-child(3):hover{
+    box-shadow: 0px 0px 20px rgba(20, 159, 252, 40%);
+}
+.icon:nth-child(4):hover{
+    box-shadow: 0px 0px 20px rgba(252, 178, 20, 0.4);
+}
+
 
 .presentacion {
     overflow: hidden;
@@ -84,6 +107,12 @@ section {
     position: absolute;
     top: 0;
     left: 50%;
+    
+    line-height: 6rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: var(--secundario);
+    transition: left .5s ease;
     transform: translate(-50%);
     -moz-transform: translate(-50%);
     -webkit-transform: translate(-50%);
@@ -91,11 +120,6 @@ section {
     -khtml-transform: translate(-50%);
     -ms-transform: translate(-50%);
     -chrome-transform: translate(-50%);
-    line-height: 6rem;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    color: var(--secundario);
-    transition: left .5s ease;
 }
 
 .presentacion::before {
@@ -117,7 +141,7 @@ section {
     -chrome-transform: translate(-50%, -50%);
     z-index: 5;
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 60%));
-    transition: left .5s ease, top .5s ease;
+    transition: left .5s ease, top .5s ease, filter .5s ease;
     animation: ocultarLogo 5s forwards;
     -moz-animation: ocultarLogo 5s forwards;
     -webkit-animation: ocultarLogo 5s forwards;
@@ -125,6 +149,11 @@ section {
     -khtml-animation: ocultarLogo 5s forwards;
     -ms-animation: ocultarLogo 5s forwards;
     -chrome-animation: ocultarLogo 5s forwards;
+
+}
+.presentacion:hover::before{
+    filter: drop-shadow(0px 0px 20px rgba(246, 248, 125, 0.911));
+    transition: filter .5s ease;
 }
 
 @keyframes ocultarLogo {
@@ -192,7 +221,9 @@ section {
     color: var(--secundario);
     font-weight: lighter;
 }
-
+.presentacion__frase > div{
+    position: relative;
+}
 .catalogo {
     margin-top: 8.4rem;
     margin-left: 7.5rem;
@@ -210,19 +241,26 @@ section {
     border-radius: 5px;
     position: relative;
     z-index: 0;
+    transition: margin .5s ease,box-shadow .5s ease;
 }
-
-.catalogo::before {
-    content: "";
-    width: 160px;
-    height: 60px;
+.catalogo__border{
     position: absolute;
+    top: 9rem;
+    left: 8rem;
     border: 1px solid var(--secundario);
     border-radius: 5px;
-    top: .5rem;
-    left: .5rem;
-    z-index: -1;
+    width: 160px;
+    height: 60px;
+    z-index: 0;
+    
 }
+.catalogo:hover{
+    margin-top: 9rem;
+    margin-left: 8rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 20%);
+
+}
+
 
 .presentacion__imagen {
     width: 50%;
@@ -373,7 +411,7 @@ section {
 .container__arreglos {
     width: 70%;
     display: grid;
-    grid-auto-rows: 48.5rem;
+    grid-auto-rows: minmac(48.5rem,auto);
     grid-template-columns: repeat(auto-fit, 29rem);
     gap: 3.5rem;
     padding-bottom: 3.5rem;
@@ -385,6 +423,14 @@ section {
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0px 0px 2rem rgba(0, 0, 0, 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow .5s ease;
+    
+}
+.carta:hover{
+    box-shadow: 0px 0px 3rem rgba(0, 0, 0, 50%);
 }
 
 .carta>img {
@@ -395,22 +441,33 @@ section {
 .nombre {
     margin-top: 2rem;
     padding: 0rem 2.5rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: var(--texto-blanco);
     font-weight: bold;
 }
+.contenedor__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+  }
 
+  
 .descripcion {
     padding: 0rem 2.5rem;
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--texto-blanco);
     font-weight: 100;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .precio {
     padding: 0rem 2.5rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
     color: var(--texto-blanco);
     font-weight: bold;
@@ -630,6 +687,7 @@ section {
         -ms-transform: translate(-50%, -50%);
         -chrome-transform: translate(-50%, -50%);
     }
+    
 
     .perfil{
         flex-direction: column;
