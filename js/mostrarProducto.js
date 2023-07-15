@@ -1,10 +1,13 @@
 import { objProductos } from "./productos.js";
+    
+const PRODUTCOS_HTML = document.getElementById("productos")
 const categoriaHtml = document.querySelectorAll(".categoria")
 const bisuteriaHtml = document.getElementById("bisuteriaHtml")
 const origamiHtml = document.getElementById("origamiHtml")
 const arregloHtml = document.getElementById("arregloHtml")
 const llaveroHtml = document.getElementById("llaveroHtml")
 const floresEternasHtml = document.getElementById("floresEternasHtml")
+const PRODUCTOS_BISUTERIA_HTML = document.querySelectorAll('.productos_bisuteria')
 let categoria = "";
 
 mostrarProductoCategoria()
@@ -42,6 +45,7 @@ function mostrarProductoCategoria() {
                 origamiHtml.style.display = "none";
                 bisuteriaHtml.style.display = "none";
                 floresEternasHtml.style.display = "none";
+
             } else if (categoria === 'floresEternas') {
                 console.log("Flores Eternas")
                 floresEternasHtml.style.display = "grid";
@@ -49,6 +53,8 @@ function mostrarProductoCategoria() {
                 arregloHtml.style.display = "none";
                 origamiHtml.style.display = "none";
                 bisuteriaHtml.style.display = "none";
+                
+                
             }  else {
                 bisuteriaHtml.style.display = 'grid';
                 origamiHtml.style.display = 'grid';
@@ -64,19 +70,22 @@ function mostrarProductoCategoria() {
 }
 
 function imprimirProductos() {
+    
     let bisuteria = 'bisuteria';
     let origami = 'origami';
     let arreglo = 'arreglo';
     let llavero = 'llavero';
     let floresEternas = 'floresEternas';
     let listaCategoria = []
-    for (let i = 0; i < objProductos.length; i++) {
+    
+
+     for (let i = 0; i < objProductos.length; i++) {
         listaCategoria = objProductos[i][bisuteria]
         if(objProductos[i].hasOwnProperty(bisuteria)) {
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
-                let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
-                            <img src="${productos.imagen}" alt="${productos.alt}">
+                let cartaJS = `<div class="carta productos_bisuteria" style='background-color:${productos.color};'">
+                            <img id="${productos.id}" class="bisuteria_js" src="${productos.imagen}" alt="${productos.alt}">
                             <p class="nombre">${productos.nombre}</p>
                             <div class="contenedor__descripcion">
                                 <p class="descripcion">${productos.descripcion}</p> 
@@ -84,17 +93,19 @@ function imprimirProductos() {
                             </div>
                         </div>`
                 bisuteriaHtml.innerHTML += cartaJS;
-                /* console.log(cartaJS) */
+                
+                
             }
         }
-    }
-    for (let i = 0; i < objProductos.length; i++) {
+    } 
+    
+     for (let i = 0; i < objProductos.length; i++) {
         listaCategoria = objProductos[i][origami]
         if(objProductos[i].hasOwnProperty(origami)) {
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
-                            <img src="${productos.imagen}" alt="">
+                            <img id="${productos.id}" class="origami_js" src="${productos.imagen}" alt="">
                             <p class="nombre">${productos.nombre}</p>
                             <div class="contenedor__descripcion">
                                 <p class="descripcion">${productos.descripcion}</p> 
@@ -103,7 +114,7 @@ function imprimirProductos() {
                             
                         </div>`
                 origamiHtml.innerHTML += cartaJS;
-                /* console.log(cartaJS) */
+                
             }
         }
     }
@@ -113,7 +124,7 @@ function imprimirProductos() {
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
-                            <img src="${productos.imagen}" alt="">
+                            <img id="${productos.id}" class="arreglo_js" src="${productos.imagen}" alt="">
                             <p class="nombre">${productos.nombre}</p>
                             <div class="contenedor__descripcion">
                                 <p class="descripcion">${productos.descripcion}</p> 
@@ -121,6 +132,7 @@ function imprimirProductos() {
                             </div>
                         </div>`
                 arregloHtml.innerHTML += cartaJS;
+                
                 
             }
         }
@@ -131,7 +143,7 @@ function imprimirProductos() {
             for (let producto in listaCategoria) {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
-                            <img src="${productos.imagen}" alt="${productos.alt}">
+                            <img id="${productos.id}" class="llavero_js" src="${productos.imagen}" alt="${productos.alt}">
                             <p class="nombre">${productos.nombre}</p>
                             <div class="contenedor__descripcion">
                                 <p class="descripcion">${productos.descripcion}</p> 
@@ -139,7 +151,6 @@ function imprimirProductos() {
                             </div>
                         </div>`
                 llaveroHtml.innerHTML += cartaJS;
-                /* console.log(cartaJS) */
             }
         }
     }
