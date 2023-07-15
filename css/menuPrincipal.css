@@ -408,7 +408,9 @@ section {
 
 .container__bisuteria,
 .container__origami,
-.container__arreglos {
+.container__arreglos,
+.container__llaveros,
+.container__flores-Eternas {
     width: 70%;
     display: grid;
     grid-auto-rows: minmac(48.5rem,auto);
@@ -416,6 +418,11 @@ section {
     gap: 3.5rem;
     padding-bottom: 3.5rem;
     justify-content: center;
+}
+.container__flores-Eternas > h2{
+    font-size: 4rem;
+    text-align: center;
+    
 }
 
 .carta {
@@ -773,6 +780,32 @@ section {
         height: 100%;
 
     }
+    .boton_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .boton_nav>p {
+        font-size: 2.5rem;
+        color: var(--texto-blanco);
+    }
+    .nav__mobile_abrir {
+        display: block;
+
+    }
+    .nav_change {
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        z-index: 20;
+        justify-content: start;
+
+    }
+    .categoria__ul {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -837,8 +870,6 @@ section {
     }
     .perfil{
         max-width: 95%;
-        
-        
     }
     .objetivo{
         max-width: 95%;
@@ -853,40 +884,7 @@ section {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .boton_nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .boton_nav>p {
-        font-size: 2.5rem;
-        color: var(--texto-blanco);
-    }
-
-    .nav_change {
-        flex-direction: column;
-        height: 100vh;
-
-        position: fixed;
-        z-index: 20;
-        justify-content: start;
-
-    }
-
-    .nav__mobile_abrir {
-        display: block;
-
-    }
-
-    /* .nav__mobile_cerrar{
-        
-    } */
-
-    .categoria__ul {
-        display: none;
-    }
+    
     .meta{
         margin-bottom: 5rem;
     }
@@ -902,7 +900,10 @@ section {
         display: inherit;
         padding-top: 14rem;
     }
-
+    .container__flores-Eternas > h2{
+        font-size: 3rem;
+        
+    }
     .presentacion {
         margin: 0 auto;
     }
@@ -945,6 +946,8 @@ section {
 }
 
 @media screen and (max-width: 375px) {
+    
+    
     .presentacion__frase {
         margin-top: 4rem;
         padding: 0rem 2rem 5rem 2rem;

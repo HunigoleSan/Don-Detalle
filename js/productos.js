@@ -24,7 +24,7 @@ let objProductos =[{
         },
         bisuteria3:{
             imagen: "img/productos/bis_3_Corazon_sabio.jpg",
-            nombre : "Corazón Sabio.",
+            nombre : "Corazón Sabio",
             descripcion: "Cuenta con mostacillas moradas, corazones morados, hilo elástico.",
             precio: "S/6.00",
             color: colores[2],
@@ -203,8 +203,200 @@ let objProductos =[{
             nombre : "Luna Eterna",
             descripcion: "Hecha de piedra luna, dije de acero en forma de luna, hilo elástico. Representa el resplandor de la luna.",
             precio: "S/25.00",
-            color: colores[2],
+            color: colores[0],
             alt: "Luna Eterna"
+        },
+        bisuteria26:{
+            imagen: "img/productos/bis_26_Pulsera_Stich.jpg",
+            nombre : "Pulsera Stich",
+            descripcion: "Hecha de hilo chino tejido a mano, bolitas de acero inoxidable, pulsera regulable.",
+            precio: "S/16.00",
+            color: colores[1],
+            alt: "Pulsera Stich"
+        },
+        bisuteria27:{
+            imagen: "img/productos/bis_27_Mano_de_fatima_dorada.jpg",
+            nombre : "Mano De Fátima Dorada",
+            descripcion: "Realiza con ojos turcos rojos, cuentas mate rojas, bolitas de acero doradas, hilo elástico.",
+            precio: "S/22.00",
+            color: colores[2],
+            alt: "Pulsera Mano de fátima dorada"
+        },
+        bisuteria28:{
+            imagen: "img/productos/bis_28_Corazon_dorado.jpg",
+            nombre : "Corazón Dorado",
+            descripcion: "Cuenta con dije de acero, bolitas de acero doradas, cuarzo rosa, hilo elástico.",
+            precio: "S/26.00",
+            color: colores[0],
+            alt: "Pulsera corazón dorado"
+        },
+        bisuteria29:{
+            imagen: "img/productos/bis_29_Family.jpg",
+            nombre : "Family",
+            descripcion: "Hecha de hilo chino tejido a mano, bolitas de acero, pulsera regulable.",
+            precio: "S/15.00",
+            color: colores[1],
+            alt: "Pulsera Family"
+        },
+        bisuteria30:{
+            imagen: "img/productos/bis_30_Infinito_plateado.jpg",
+            nombre : "Infinito Plateado",
+            descripcion: "Realizada con hilo chino rojo tejido a mano, dije de níquel, bolitas de acero inoxidable, pulsera graduable.",
+            precio: "S/9.00",
+            color: colores[2],
+            alt: "Pulsera infinito plateado"
+        },
+        bisuteria31:{
+            imagen: "img/productos/bis_31_Infinito_dorado.jpg",
+            nombre : "Infinito dorado",
+            descripcion: "Cuenta con dije de níquel, hilo chino rojo, pulsera graduable",
+            precio: "S/7.00",
+            color: colores[0],
+            alt: "Pulsera infinito dorado"
+        },
+        bisuteria32:{
+            imagen: "img/productos/bis_32_ojo_turco_negro.jpg",
+            nombre : "Ojo turco negro",
+            descripcion: "Cuenta con hilo chino tejida a mano, bolitas de acero inoxidable, pulsera regulable.",
+            precio: "S/9.00",
+            color: colores[1],
+            alt: "Pulsera Ojo turco negro"
+        },
+        bisuteria33:{
+            imagen: "img/productos/bis_33_Pulsera_toxica.jpg",
+            nombre : "Pulsera tóxica ⚠",
+            descripcion: "Cuenta con hilo chino, tejida a mano, bolitas de acero, pulsera regulable.",
+            precio: "S/18.00",
+            color: colores[2],
+            alt: "Pulsera tóxica"
+        },
+        bisuteria34:{
+            imagen: "img/productos/bis_34_The_heart_key.jpg",
+            nombre : "The heart key",
+            descripcion: "Realizada con hilo chino negro, dije de níquel, bolitas de acero plateado, pulsera regulable.",
+            precio: "S/8.00",
+            color: colores[0],
+            alt: "Pulsera the hear key"
+        },
+        bisuteria35:{
+            imagen: "img/productos/bis_35_Inicial_favorita.jpg",
+            nombre : "Pulsera con letra inicial",
+            descripcion: "Lleva Contigo tu inicial favorita.",
+            precio: "S/5.00",
+            color: colores[1],
+            alt: "Pulsera con letra inicial"
+        },
+        bisuteria36:{
+            imagen: "img/productos/bis_36_Inicial_favorita.jpg",
+            nombre : "Pulsera con letra inicial",
+            descripcion: "Lleva Contigo tu inicial favorita.",
+            precio: "S/5.00",
+            color: colores[2],
+            alt: "Pulsera con letra inicial"
+        },
+        bisuteria37:{
+            imagen: "img/productos/bis_37_Pulsera_personalizado_luminiscente.jpg",
+            nombre : "Pulsera personalizable luminiscente",
+            descripcion: "Personaliza tu pulsera luminiscente con el nombre de tu preferencia.",
+            precio: "S/12.00",
+            color: colores[0],
+            alt: "Pulsera personalizable"
+        },
+        bisuteria38:{
+            imagen: "img/productos/bis_38_Pulsera_personalizado.jpg",
+            nombre : "Pulsera personalizable",
+            descripcion: "Personaliza tu pulsera con el nombre de tu preferencia.",
+            precio: "S/12.00",
+            color: colores[1],
+            alt: "Pulsera personalizable"
+        },
+        bisuteria39:{
+            imagen: "img/productos/bis_39_Pulsera_de_la_fortuna.jpg",
+            nombre : "Pulsera De La Fortuna",
+            descripcion: "Cuenta con dije de níquel, cuentas de trébol, bolitas de acero inoxidable, hilo chino rojo, tejida a mano, pulsera regulable.",
+            precio: "S/18.00",
+            color: colores[2],
+            alt: "Pulsera de la fortuna"
+        },
+        bisuteria40:{
+            imagen: "img/productos/bis_40_inicial_de_tu_persona_favorita.jpg",
+            nombre : "Pulsera Con lLetra Inicial De Tú Persona Favorita",
+            descripcion: "Lleva tu pulsera con la inicial de tu persona favorita.",
+            precio: "S/9.00",
+            color: colores[0],
+            alt: "Pulsera con letra inicial de mi persona favorita"
+        },
+        bisuteria41:{
+            imagen: "img/productos/bis_41_Cross_of_life.jpg",
+            nombre : "Cross of life",
+            descripcion: " Realizada con hilo blanco, bolitas de acero plateadas, dije de níquel, tejida a mano, pulsera regulable.",
+            precio: "S/12.00",
+            color: colores[1],
+            alt: ""
+        },
+        bisuteria42:{
+            imagen: "img/productos/bis_42_Torre_eiffel.jpg",
+            nombre : "Torre Eiffel",
+            descripcion: "Realizada con hilo chino rojo, tejida a mano, corazones luminosos, bolitas de acero doradas, dije de níquel, pulsera regulable.",
+            precio: "S/15.00",
+            color: colores[2],
+            alt: "Pulsera Torre Eiffel"
+        },
+        bisuteria43:{
+            imagen: "img/productos/bis_43_Arbol_de_la_vida.jpg",
+            nombre : "Árbol de la vida",
+            descripcion: "Hecha con hilo chino rojo, tejida a mano, dije de níquel, bolitas de acero, pulsera regulable.",
+            precio: "S/12.00 c/u",
+            color: colores[0],
+            alt: "Pulsera árbol de la vida"
+        },
+        bisuteria44:{
+            imagen: "img/productos/bis_44_Love.jpg",
+            nombre : "Love",
+            descripcion: "Hecha con hilo china rosa, tejida a mano, dije de níquel, corazones rosa, bolitas de acero inoxidable, pulsera regulable.",
+            precio: "S/14.00",
+            color: colores[1],
+            alt: "Pulsera love"
+        },
+        bisuteria45:{
+            imagen: "img/productos/bis_45_Mano_de_fatima.jpg",
+            nombre : "Mano De Fátima En Niquel",
+            descripcion: "Realizada con hilo chino blanco, dije de níquel, tejida a mano, cuarzo verde, bolitas de acero plateadas, pulsera regulable.",
+            precio: "S/14.00",
+            color: colores[2],
+            alt: "Pulsera mano de fátima en niquel"
+        },
+        bisuteria46:{
+            imagen: "img/productos/bis_46_Ojo_turco_rojo.jpg",
+            nombre : "Ojo Turco Rojo",
+            descripcion: "Cuenta con cuarzos de piedra luna, bolitas rojo mate, ojo turco rojo, bolitas de acero plateadas, hilo elástico. Esta pulsera te protege de las energías negativas a tu alrededor.",
+            precio: "S/26.00",
+            color: colores[0],
+            alt: "Pulsera ojo turco rojo"
+        },
+        bisuteria47:{
+            imagen: "img/productos/bis_47_Ancla.jpg",
+            nombre : "Ancla",
+            descripcion: "Hecha con hilo chino azul, dije de niquel, bolitas de acero plateadas, pulsera regulable.",
+            precio: "S/8.00",
+            color: colores[1],
+            alt: "Pulsera ancla"
+        },
+        bisuteria48:{
+            imagen: "img/productos/bis_48_Love_purple.jpg",
+            nombre : "Love Purple",
+            descripcion: "Hecha de hilo chino lila, dije de niquel, bolitas de acero plateadas, pulsera regulable.",
+            precio: "S/8.00",
+            color: colores[1],
+            alt: "Pulsera love purple"
+        },
+        bisuteria49:{
+            imagen: "img/productos/bis_49_Queen.jpg",
+            nombre : "Queen",
+            descripcion: "Realizada con hilo chino lila, tejido a mano, dije de níquel, bolitas de acero plateadas, pulsera regulable.",
+            precio: "S/12.00",
+            color: colores[1],
+            alt: "Pulsera queen"
         }
     },
     origami:{
@@ -222,7 +414,7 @@ let objProductos =[{
             nombre: "Corazón Con Parador De Papel",
             descripcion: "Fácil limpieza",
             precio: "S/15.00",
-            color: colores[0],
+            color: colores[1],
             alt: "Corazón Con Parador De Papel"
 
         },origami3:{
@@ -230,7 +422,7 @@ let objProductos =[{
             nombre: "Elefante de papel",
             descripcion: "Fácil limpieza",
             precio: "S/30.00",
-            color: colores[0],
+            color: colores[2],
             alt: "Elefante de papel"
 
         },origami4:{
@@ -246,7 +438,7 @@ let objProductos =[{
             nombre: "Oso Panda De Papel",
             descripcion: "Fácil limpieza",
             precio: "S/32.00",
-            color: colores[0],
+            color: colores[1],
             alt: "Oso Panda De Papel"
 
         },origami6:{
@@ -254,27 +446,142 @@ let objProductos =[{
             nombre: "Perro De Papel",
             descripcion: "Fácil limpieza",
             precio: "S/58.00",
-            color: colores[0],
+            color: colores[2],
             alt: "Perro De Papel"
 
         },origami7:{
             imagen: "img/productos/origami/ori_7_Tortuga_de_papel.jpg",
-            nombre: "Tortuga de Papel",
+            nombre: "Tortuga De Papel",
             descripcion: "Fácil limpieza",
             precio: "S/30.00",
             color: colores[0],
             alt: "Tortuga de Papel"
-        }     
+        },origami8:{
+            imagen: "img/productos/origami/ori_8_Corazon_de_papel.jpg",
+            nombre: "Corazón De Papel",
+            descripcion: "Fácil limpieza",
+            precio: "S/10.00",
+            color: colores[1],
+            alt: " Corazón de Papel"
+        },origami9:{
+            imagen: "img/productos/origami/ori_9_Gato_blanco_de_papel.jpg",
+            nombre: "Gato Blanco De Papel",
+            descripcion: "Fácil limpieza",
+            precio: "S/28.00",
+            color: colores[2],
+            alt: "Gato blanco de Papel"
+        } 
     },
     arreglo:{
         arreglo1:{
-            imagen: "",
-            nombre: "undefined",
-            descripcion: "undefined",
-            precio: "undefined",
+            imagen: "img/productos/arreglos/arr_1_feliz_dia_papa.jpg",
+            nombre: "Feliz día papá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestro querido padre.",
+            precio: "S/46.00",
+            color: colores[0],
+            alt: "Arreglo feliz día papá"
+        },
+        arreglo2:{
+            imagen: "img/productos/arreglos/arr_2_feliz_dia_mama.jpg",
+            nombre: "Feliz día mamá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestra querida madre.",
+            precio: "S/70.00",
             color: colores[1],
-            alt: "undefined"
+            alt: "Arreglo feliz día mamá"
+        },
+        arreglo3:{
+            imagen: "img/productos/arreglos/arr_3_feliz_dia_mama.jpg",
+            nombre: "Feliz día mamá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestra querida madre.",
+            precio: "S/48.00",
+            color: colores[2],
+            alt: "Arreglo feliz día mamá"
+        },
+        arreglo4:{
+            imagen: "img/productos/arreglos/arr_4_feliz_dia_enamorados.jpg",
+            nombre: "Feliz día del enamorado",
+            descripcion: "Que esperas, para darle una sorpresa a tu pareja con este increíble regalo, ¡Lo sorprenderás!",
+            precio: "S/16.00",
+            color: colores[0],
+            alt: "Arreglo feliz día del enamorado"
+        },
+        arreglo5:{
+            imagen: "img/productos/arreglos/arr_5_feliz_dia_mama.jpg",
+            nombre: "Feliz día mamá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestra querida madre.",
+            precio: "S/48.00",
+            color: colores[1],
+            alt: "Arreglo feliz día mamá"
+        } ,
+        arreglo6:{
+            imagen: "img/productos/arreglos/arr_6_feliz_dia_mama.jpg",
+            nombre: "Feliz día mamá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestra querida madre.",
+            precio: "S/48.00",
+            color: colores[2],
+            alt: "Arreglo feliz día mamá"
+        },
+        arreglo7:{
+            imagen: "img/productos/arreglos/arr_7_feliz_dia_mama.jpg",
+            nombre: "Feliz día mamá",
+            descripcion: "Regalo especial para dedicarle una bonita sorpresa a nuestra querida madre.",
+            precio: "S/60.00",
+            color: colores[0],
+            alt: "Arreglo feliz día mamá"
         }
+    },
+    llavero:{
+        llavero1:{
+            imagen: "img/productos/llaveros/lla_1_Llavero_de_goku.jpg",
+            nombre: "Llavero Goku",
+            descripcion: "Increíble llavero de la saga de dragón ball",
+            precio: "S/18.00",
+            color: colores[0],
+            alt: "LLavero Goky"
+        },
+        llavero2:{
+            imagen: "img/productos/llaveros/lla_2_Llavero_de_maestro_rosshi.jpg",
+            nombre: "Llavero Maestro Rosshi",
+            descripcion: "Increíble llavero de la saga de dragón ball",
+            precio: "S/18.00",
+            color: colores[1],
+            alt: "Llavero Maestro Rosshi"
+        },
+        llavero3:{
+            imagen: "img/productos/llaveros/lla_3_Llavero_chuky.jpg",
+            nombre: "Llavero Chuky",
+            descripcion: "Figuras de chuky a llegado hasta aqui!",
+            precio: "S/18.00",
+            color: colores[2],
+            alt: "Llavero chuky"
+        },
+        llavero4:{
+            imagen: "img/productos/llaveros/lla_4_Llavero_Pikachu.jpg",
+            nombre: "Llavero Pikachu",
+            descripcion: "Revive los momentos especiales de la saga de Pokémon.",
+            precio: "S/18.00",
+            color: colores[0],
+            alt: "Llavero pikachu"
+        },
+        llavero5:{
+            imagen: "img/productos/llaveros/lla_5_Llavero_spiderman.jpg",
+            nombre: "Llavero Spiderman",
+            descripcion: "¡Activa tu sentido arácnido con los poderes del Hombre araña!",
+            precio: "S/18.00",
+            color: colores[1],
+            alt: "Llavero spiderman"
+        },
+        llavero6:{
+            imagen: "img/productos/llaveros/lla_6_Llavero_tiffany.jpg",
+            nombre: "Llavero Tiffany",
+            descripcion: "Llavero Tifanny novia de chuky",
+            precio: "S/18.00",
+            color: colores[2],
+            alt: "Llavero tiffany"
+        }
+    },
+    floresEternas:{
+        proximamente: "Próximamente..."
     }
 }];
 export{objProductos}
