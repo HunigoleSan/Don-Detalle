@@ -12,6 +12,7 @@ let categoria = "";
 
 mostrarProductoCategoria()
 function mostrarProductoCategoria() {
+    floresEternasHtml.style.display = "none";
     categoriaHtml.forEach(function (currentValue, index, array) {
         /* console.log(currentValue) */
         currentValue.addEventListener('click', function () {
