@@ -14,7 +14,7 @@ main {
 
 .mobile {
     display: none;
-    
+    cursor: pointer;
 }
 .nav__mobile_cerrar{
     padding: 0.6rem;
