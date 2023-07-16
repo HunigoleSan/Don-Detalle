@@ -34,5 +34,6 @@ window.addEventListener("resize", function () {
   anchoPantala = window.innerWidth;
   console.log(anchoPantala);
 });
-window.addEventListener("scroll", moverNavScroll);
+
  */
+window.addEventListener("scroll", moverNavScroll);
