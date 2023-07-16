@@ -500,12 +500,11 @@ section {
 
 .perfil {
     max-width: 100rem;
-    max-height: 60rem;
-
+    min-height: 60rem;
     margin: 3rem auto;
     display: flex;
-
     position: relative;
+    justify-content: center;
 }
 
 .frase-size {
@@ -528,8 +527,10 @@ section {
 
 .avatar,
 .informacion {
-    width: 50%;
+    /*desactivado temporalmente*/
+    /* width: 50%; */
 }
+
 
 .avatar {
     background-color: var(--crema-claro);
@@ -541,10 +542,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: 100%
 }
 
 .modelo_desktop {
-    display: block;
+    /* desactivar modelo temporalmente*/
+    display: none;
     width: 100%;
     height: 100%;
     object-fit: contain;
