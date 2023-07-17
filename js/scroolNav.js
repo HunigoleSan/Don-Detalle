@@ -1,11 +1,12 @@
 let vinetaHtml = document.getElementById("vineta");
+let vineta_mobile_HTML = document.getElementById("vineta_mobile");
 let catalogoHtml = document.getElementById("catalogo");
 let iconos_redes_sociales_HTML = document.querySelectorAll(".icon");
 console.log(iconos_redes_sociales_HTML.item);
 
 function moverNavScroll() {
   let scrollTop = document.documentElement.scrollTop;
-  console.log(document.documentElement.scrollHeight);
+  
   if (scrollTop > 900) {
     vinetaHtml.classList.add("nav__bottom");
     for (let i = 0; i < iconos_redes_sociales_HTML.length; i++) {
@@ -17,23 +18,20 @@ function moverNavScroll() {
     vinetaHtml.classList.remove("nav__bottom");
     for (let i = 0; i < iconos_redes_sociales_HTML.length; i++) {
       setTimeout(function () {
-        iconos_redes_sociales_HTML[i].classList.remove(
-          "icon_transform_desktop"
-        );
+        iconos_redes_sociales_HTML[i].classList.remove("icon_transform_desktop");
       }, 500);
     }
   }
-}
-/* let anchoPantala = 0;
-function vinetaMobileDisplay(){
-    if(anchoPantala <= 414){
 
-    }
-}
-window.addEventListener("resize", function () {
-  anchoPantala = window.innerWidth;
-  console.log(anchoPantala);
-});
+  if (scrollTop > 900) {
+    vineta_mobile_HTML.classList.remove("nav__bottom_mobile_top");
+    vineta_mobile_HTML.classList.add("nav__bottom_mobile");
+    console.log(vineta_mobile_HTML)
+  } else {
+    vineta_mobile_HTML.classList.remove("nav__bottom_mobile");
+    vineta_mobile_HTML.classList.add("nav__bottom_mobile_top");
+  }
 
- */
+}
+
 window.addEventListener("scroll", moverNavScroll);

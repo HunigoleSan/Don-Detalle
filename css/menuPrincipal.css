@@ -76,7 +76,7 @@ section {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     z-index: 10;
     gap: 25px;
@@ -1006,6 +1006,37 @@ section {
     .vineta_mobile{
         display: flex;
     }
+    .nav__bottom_mobile{
+        
+        transition: animation_vineta_mobile_bottom .5s ease-in-out;
+        animation: animation_vineta_mobile_bottom 1s ease-in-out forwards;
+       
+    }
+    .nav__bottom_mobile_top{
+        animation: animation_vineta_mobile_top 1s ease-in-out forwards;
+    }
+    @keyframes animation_vineta_mobile_bottom {
+        to{
+            top: 100%;
+            transform: translateY(-100%);
+        }
+        from{
+            top: 0;
+            transform: translateY(0%);
+        }
+    }
+    @keyframes animation_vineta_mobile_top {
+        to{
+            top: 0;
+            transform: translateY(0%);
+        }
+        from{
+            
+            top: 100%;
+            transform: translateY(-100%);
+            
+        }
+    }
     .vineta{
         display: none;
     }
@@ -1131,12 +1162,11 @@ section {
 .nav__bottom {
     bottom: -5px;
     top: inherit;
-
-    top: inherit;
     transform: rotateX(190deg);
     background-position: center center;
     transition: transform .5s ease-in-out;
 }
+
 .icon_transform_desktop{
     transform: rotateX(190deg);
     transition: transform .5s ease-in-out;
