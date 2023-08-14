@@ -444,7 +444,7 @@ section {
 .container__flores-Eternas {
     width: 70%;
     display: grid;
-    grid-auto-rows: minmac(48.5rem,auto);
+    grid-auto-rows: minmax(48.5rem,auto);
     grid-template-columns: repeat(auto-fit, 29rem);
     gap: 3.5rem;
     padding-bottom: 3.5rem;
