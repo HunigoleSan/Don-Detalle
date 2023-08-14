@@ -87,8 +87,9 @@ function imprimirProductos() {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta productos_bisuteria" style='background-color:${productos.color};'">
                             <img id="${productos.id}" class="bisuteria_js" src="${productos.imagen}" alt="${productos.alt}">
-                            <p class="nombre">${productos.nombre}</p>
+                            
                             <div class="contenedor__descripcion">
+                                <p class="nombre">${productos.nombre}</p>
                                 <p class="descripcion">${productos.descripcion}</p> 
                                 <p class="precio">${productos.precio}</p>
                             </div>
@@ -107,8 +108,9 @@ function imprimirProductos() {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
                             <img id="${productos.id}" class="origami_js" src="${productos.imagen}" alt="">
-                            <p class="nombre">${productos.nombre}</p>
+                            
                             <div class="contenedor__descripcion">
+                                <p class="nombre">${productos.nombre}</p>
                                 <p class="descripcion">${productos.descripcion}</p> 
                                 <p class="precio">${productos.precio}</p>
                             </div>
@@ -126,8 +128,9 @@ function imprimirProductos() {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
                             <img id="${productos.id}" class="arreglo_js" src="${productos.imagen}" alt="">
-                            <p class="nombre">${productos.nombre}</p>
+                            
                             <div class="contenedor__descripcion">
+                                <p class="nombre">${productos.nombre}</p>
                                 <p class="descripcion">${productos.descripcion}</p> 
                                 <p class="precio">${productos.precio}</p>
                             </div>
@@ -145,8 +148,9 @@ function imprimirProductos() {
                 let productos = listaCategoria[producto]
                 let cartaJS = `<div class="carta" style='background-color:${productos.color};'">
                             <img id="${productos.id}" class="llavero_js" src="${productos.imagen}" alt="${productos.alt}">
-                            <p class="nombre">${productos.nombre}</p>
+                            
                             <div class="contenedor__descripcion">
+                                <p class="nombre">${productos.nombre}</p>
                                 <p class="descripcion">${productos.descripcion}</p> 
                                 <p class="precio">${productos.precio}</p>
                             </div>
